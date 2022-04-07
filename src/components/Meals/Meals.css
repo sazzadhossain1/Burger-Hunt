@@ -1,0 +1,26 @@
+
+
+.meal-container img{
+    width:100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+.cart-container{
+    background-color: rgba(255, 0, 0, 0.137);
+    width: 300px;
+    height: 435px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px  ;
+    
+}
+
+
+.button{
+    background-color:black;
+    color: white;
+    padding: 5px;
+    
+    border-radius: 10px;
+}

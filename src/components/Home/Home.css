@@ -17,3 +17,28 @@
 .customer-review{
     margin-top: 100px;
 }
+
+.input{
+    width:1000px;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+
+.meal-parents{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-left: 200px;
+    margin-top: 30px;
+    
+    
+    
+}
+
+.cart{
+    background-color: rgba(0, 0, 0, 0.171);
+}
