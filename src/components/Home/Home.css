@@ -44,8 +44,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 30px;
+    
     
     
     
@@ -54,4 +55,24 @@
 .cart{
     background-color: rgba(0, 0, 0, 0.171);
     padding: 20px;
+}
+
+
+.crt-container{
+    background-color: rgba(0, 0, 0, 0.171);
+
+}
+.crt-container img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50px;
+    
+    
+}
+.user{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px;
+    
 }

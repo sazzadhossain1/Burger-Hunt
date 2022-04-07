@@ -1,6 +1,8 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
 import Meals from "../Meals/Meals";
+import useReviews from "../../hooks/useReview";
+import SingleReview from "../SingleReview/SingleReview";
 
 const Hone = () => {
   const [meals, setMeals] = useState([]);
@@ -10,8 +12,13 @@ const Hone = () => {
       .then((data) => setMeals(data));
   }, []);
 
+
+
+  const [reviews, setReviews] = useReviews();
+  
+
   return (
-    <div className="">
+    <div className="main">
       <div className="home-component">
         <h2 className="burger-hunt">
           Welcome to The <small>Burger Hunt</small> Clube
@@ -43,11 +50,19 @@ const Hone = () => {
         </div>
       </div>
 
-      <div className="cart">
-        <h1>Customer Rewiew</h1>
+      <div className="cart crt-container">
+        <h1 className="text-3xl my-10"><small className="text-6xl">Customer</small> Rewiew</h1>
+
+       <div className="user">
+       {
+          reviews.map(re => <SingleReview key={re.id}
+          re={re}></SingleReview> )
+        }
+       </div>
       </div>
     </div>
   );
 };
 
 export default Hone;
+ 

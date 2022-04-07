@@ -1,0 +1,19 @@
+.review-container{
+    background-color:rgb(155, 151, 151);
+    width: 370px;
+    margin-left: 100px;
+    margin: auto;
+    padding: 30px;
+    height: 350px;
+    border-radius: 15px;
+    
+    box-shadow: 5px 20px 10px  rgba(0, 0, 0, 0.438);
+    
+    
+
+}
+
+.review-container img{
+    margin-left: 90px;
+
+}
