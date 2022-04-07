@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Meals from "../Meals/Meals";
 import useReviews from "../../hooks/useReview";
 import SingleReview from "../SingleReview/SingleReview";
+import { Link } from "react-router-dom";
 
 const Hone = () => {
   const [meals, setMeals] = useState([]);
@@ -12,10 +13,7 @@ const Hone = () => {
       .then((data) => setMeals(data));
   }, []);
 
-
-
   const [reviews, setReviews] = useReviews();
-  
 
   return (
     <div className="main">
@@ -51,18 +49,21 @@ const Hone = () => {
       </div>
 
       <div className="cart crt-container">
-        <h1 className="text-3xl my-10"><small className="text-6xl">Customer</small> Rewiew</h1>
+        <h1 className="text-3xl my-10">
+          <small className="text-6xl">Customer</small> Rewiew
+        </h1>
 
-       <div className="user">
-       {
-          reviews.map(re => <SingleReview key={re.id}
-          re={re}></SingleReview> )
-        }
-       </div>
+        <div className="user">
+          {reviews.map((re) => (
+            <SingleReview key={re.id} re={re}></SingleReview>
+          ))}
+
+         
+        </div>
+        <Link to="reviews">Reviews</Link>
       </div>
     </div>
   );
 };
 
 export default Hone;
- 

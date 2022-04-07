@@ -1,11 +1,31 @@
-import React from 'react';
+import React from "react";
+import useReviews from "../../hooks/useReview";
+import SingleReview from "../SingleReview/SingleReview";
+import "./Reviews.css";
 
 const Reviews = () => {
-    return (
-        <div>
-            <h1>this is reviews</h1>
-        </div>
-    );
+  const [reviews, setReviews] = useReviews([]);
+
+  return (
+    <div className="container">
+      
+      <div>
+      
+      <div className="crt-container ctcn">
+      
+      <div className="user userName">
+          
+        {" "}
+        
+        {reviews.map((re) => (
+          <SingleReview key={re.id} re={re}></SingleReview>
+        ))}
+      </div>
+    </div>
+      </div>
+      
+    </div>
+  );
 };
 
 export default Reviews;
