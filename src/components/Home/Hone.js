@@ -13,6 +13,9 @@ const Hone = () => {
   return (
     <div className="">
       <div className="home-component">
+        <h2 className="burger-hunt">
+          Welcome to The <small>Burger Hunt</small> Clube
+        </h2>
         <input className="input" type="text" placeholder="Search Meals" />
 
         <h2 className="text-4xl ">Free Home Delivery 24 Hours</h2>
@@ -27,12 +30,21 @@ const Hone = () => {
         </p>
       </div>
       <div className="cart">
-        <h1 className="customer-review text-4xl mt-10">Just Eat And Feel It</h1>
+        <div>
+          <h1 className="customer-review text-4xl">
+            Just Eat And Feel The <small className="Burger">Burger</small>
+          </h1>
+        </div>
+
         <div className="meal-parents">
           {meals.map((me) => (
             <Meals key={me.id} me={me}></Meals>
           ))}
         </div>
+      </div>
+
+      <div className="cart">
+        <h1>Customer Rewiew</h1>
       </div>
     </div>
   );

@@ -8,6 +8,13 @@
     
 }
 
+.burger-hunt{
+    font-size: 20px;
+}
+.burger-hunt small{
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.616);
+}
 .peragraph{
     width: 700px;
     margin: auto;
@@ -15,11 +22,16 @@
 }
 
 .customer-review{
-    margin-top: 100px;
+    margin-top: 40px;
+    font-size: 50px;
+    padding: 30px;
+}
+.Burger{
+    color: red;
 }
 
 .input{
-    width:1000px;
+    width:800px;
     margin: 20px;
     margin-bottom: 40px;
     padding: 10px;
@@ -41,4 +53,5 @@
 
 .cart{
     background-color: rgba(0, 0, 0, 0.171);
+    padding: 20px;
 }
